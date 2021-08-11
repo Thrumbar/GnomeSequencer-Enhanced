@@ -55,6 +55,10 @@
 		<a href="../../../files/GSE/API/Events.html">GSE/API/Events.lua</a>
 	</li>
 
+	<li>
+		<a href="../../../files/GSE/API/Indent.html">GSE/API/Indent.lua</a>
+	</li>
+
 	<li><strong>GSE/API/Init.lua</strong></li>
 	
 	<li>
@@ -111,7 +115,7 @@
 <h1>File <code>GSE/API/Init.lua</code></h1>
 
 
-<p>When the Addon loads, printing is paused until after every other mod has loaded. This method prints the print queue.</p>
+<p>Checks for nil or empty variables.</p>
 
 
 
@@ -120,6 +124,11 @@
 
 <h2>Functions</h2>
 <table class="function_list">
+
+	<tr>
+	<td class="name" nowrap><a href="#GSE.ParseVersion">GSE.ParseVersion</a>&nbsp;(version)</td>
+	<td class="summary">This function takes a version String and returns a version number.</td>
+	</tr>
 
 	<tr>
 	<td class="name" nowrap><a href="#GSE.PerformPrint">GSE.PerformPrint</a>&nbsp;()</td>
@@ -137,8 +146,18 @@
 	</tr>
 
 	<tr>
+	<td class="name" nowrap><a href="#GSE.isEmpty">GSE.isEmpty</a>&nbsp;(s)</td>
+	<td class="summary">Checks for nil or empty variables.</td>
+	</tr>
+
+	<tr>
 	<td class="name" nowrap><a href="#GSE.printNoGui">GSE.printNoGui</a>&nbsp;()</td>
 	<td class="summary">Prints that no GUI is available and needs to be loaded in the plugin window.</td>
+	</tr>
+
+	<tr>
+	<td class="name" nowrap><a href="#GSE.split">GSE.split</a>&nbsp;(source, delimiters)</td>
+	<td class="summary">Split a string into an array based on the delimiter specified.</td>
 	</tr>
 
 	<tr>
@@ -161,6 +180,32 @@
 
 <h2><a name="functions"></a>Functions</h2>
 <dl class="function">
+
+
+
+<dt><a name="GSE.ParseVersion"></a><strong>GSE.ParseVersion</strong>&nbsp;(version)</dt>
+<dd>
+This function takes a version String and returns a version number.
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  version: 
+	</li>
+	
+</ul>
+
+
+
+
+
+
+
+
+</dd>
+
 
 
 
@@ -241,10 +286,66 @@ Prints <code>message</code>to the chat handler.  This accepts an optional <code>
 
 
 
+<dt><a name="GSE.isEmpty"></a><strong>GSE.isEmpty</strong>&nbsp;(s)</dt>
+<dd>
+Checks for nil or empty variables.
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  s: 
+	</li>
+	
+</ul>
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
 <dt><a name="GSE.printNoGui"></a><strong>GSE.printNoGui</strong>&nbsp;()</dt>
 <dd>
 Prints that no GUI is available and needs to be loaded in the plugin window.
 
+
+
+
+
+
+
+
+
+</dd>
+
+
+
+
+<dt><a name="GSE.split"></a><strong>GSE.split</strong>&nbsp;(source, delimiters)</dt>
+<dd>
+Split a string into an array based on the delimiter specified.
+
+
+<h3>Parameters</h3>
+<ul>
+	
+	<li>
+	  source: 
+	</li>
+	
+	<li>
+	  delimiters: 
+	</li>
+	
+</ul>
 
 
 
